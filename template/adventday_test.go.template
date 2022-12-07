@@ -1,0 +1,42 @@
+package advent
+
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"testing"
+)
+
+func TestAdventGame7a(t *testing.T) {
+	fInput, ferr := os.Open("files/input.7.test")
+	if ferr != nil {
+		fmt.Println("Error reading input", ferr)
+		return
+	}
+	defer fInput.Close()
+	fileScanner := bufio.NewScanner(fInput)
+	fileScanner.Split(bufio.ScanLines)
+	for fileScanner.Scan() {
+		value := fileScanner.Text()
+		fmt.Println(value)
+	}
+	finalWord := ""
+	fmt.Println("Word:", finalWord)
+}
+
+func TestAdventGame7b(t *testing.T) {
+	fInput, ferr := os.Open("files/input.7.test")
+	if ferr != nil {
+		fmt.Println("Error reading input", ferr)
+		return
+	}
+	defer fInput.Close()
+	fileScanner := bufio.NewScanner(fInput)
+	fileScanner.Split(bufio.ScanLines)
+	for fileScanner.Scan() {
+		value := fileScanner.Text()
+		fmt.Println(value)
+	}
+	finalWord := ""
+	fmt.Println("Word:", finalWord)
+}
