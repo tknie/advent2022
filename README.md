@@ -1,6 +1,6 @@
 ### Content
 
-This is an advent-to-code example using GO test.
+This is an [advent-to-code](https://adventofcode.com/2022) example using GO test.
 
 ### Requirement
 
